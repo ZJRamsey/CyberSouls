@@ -10,8 +10,9 @@ public class WallRun : MonoBehaviour {
         player = gameObject.find();
     }
     
-    bool wallCheck () {
-        Physics.Raycast(player.transform.position, player.transform.left, )
+    // Returns 0 if no walls, or 1-4 for which direction a wall is going clockwise from forward.
+    int wallCheck () {
+        Physics.Raycast(player.transform.position, player.transform.left);
     }
 
     // Update is called once per frame
